@@ -12,7 +12,7 @@ var twoSum = function(nums, target) {
    
     for(let i = 0; i < nums.length; i++){
         if(target - nums[i] in obj ){  
-            console.log('inside')
+            
                 return [i,obj[target - nums[i]]];
         }else{
             obj[nums[i]] = i;
