@@ -13,7 +13,6 @@ var maxProfit = function(prices) {
         max = Math.max(sellPrice - min, max);
         //reacalc the lowest possible buy price
         min = Math.min(prices[i], min);
-        
     }
-    return max > 0 ? max : 0;
+    return max;
 };
