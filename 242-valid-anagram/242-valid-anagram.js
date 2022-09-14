@@ -10,10 +10,6 @@ var isAnagram = function(s, t) {
     //if t is empty str, return true otherwise, false
     if(s.length !== t.length) return false;
     let tCopy = t.slice();
-    let sCopy = s.slice();
-    let i = 0; 
-     sCopy = s.split('');
-       
     for(let i = 0; i < s.length; i++){
        if(tCopy.includes(s[i])){
            let findIndx = tCopy.indexOf(s[i])
