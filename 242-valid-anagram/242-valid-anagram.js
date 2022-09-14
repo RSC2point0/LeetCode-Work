@@ -6,7 +6,7 @@
 var isAnagram = function(s, t) {
     //if strings are not the same size return false
     //iterate thr s
-        //if first letter in t is in s shift from t
+        //if first letter in t is in s remove from t
     //if t is empty str, return true otherwise, false
     if(s.length !== t.length) return false;
     let tCopy = t.slice();
