@@ -39,6 +39,7 @@ var solution = function(isBadVersion) {
             }
            
         }
+        //returns the leftmost bad version due to constant left shift
         return right;
     };
 };
