@@ -15,7 +15,7 @@ var search = function(nums, target) {
     
     while(l <= r){
         let pointer = Math.floor((l+r)/2);
-        if(nums[pointer] === target) return nums.indexOf(nums[pointer]);
+        if(nums[pointer] === target) return pointer;
         if(nums[pointer] > target){
             r--;
         }else{
