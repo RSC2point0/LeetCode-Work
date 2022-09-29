@@ -7,14 +7,14 @@
  */
 var floodFill = function(image, sr, sc, color) {
 
-      if(image[sr][sc] === color || image[sr][sc] === color || image === undefined){
+      if( image[sr][sc] === color || image === undefined){
          return image;
        }
     const oldColor = image[sr][sc];
-    const changeArray = (image, r, c, oldColor, color) => {
+    function changeArray(image, r, c, oldColor, color){
        //check if row or column are out of bounds toward top or out of bounds toward the bottom
        if(r < 0 || r >= image.length || c < 0 || c >= image[0].length || image[r][c] !== oldColor) return;
-      
+        //change image to reflect current coords
         image[r][c] = color;
         changeArray(image, r -1, c, oldColor, color);//top of curr pixel
         changeArray(image, r + 1, c, oldColor, color);//bottom of curr pixel
