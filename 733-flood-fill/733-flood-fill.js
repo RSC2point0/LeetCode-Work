@@ -16,7 +16,7 @@ var floodFill = function(image, sr, sc, color) {
        if(r < 0 || r >= image.length || c < 0 || c >= image[0].length || image[r][c] !== oldColor) return;
         //change image to reflect current coords
         image[r][c] = color;
-        changeArray(image, r -1, c, oldColor, color);//top of curr pixel
+        changeArray(image, r - 1, c, oldColor, color);//top of curr pixel
         changeArray(image, r + 1, c, oldColor, color);//bottom of curr pixel
         changeArray(image, r, c - 1, oldColor, color);//left of curr pixel
         changeArray(image, r, c + 1, oldColor, color);//right of curr pixel
